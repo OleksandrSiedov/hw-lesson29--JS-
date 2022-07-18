@@ -1,15 +1,18 @@
 "use strict";
 
-/*
+
 //Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.
 
-НЕ РАБОТАЕТ!!!
+/*
 
-let a = 0.1;
-let b = 0.2;
+//НЕ РАБОТАЕТ!!!
+
+const a = 0.1;
+const b = 0.2;
 let c = (a + b);
-c = с.toFixed(1);
-console.log(c);
+//с = 10; - почему это присвоение не работает?
+// const c1 = с.toFixed(2); - и так не работате
+
 */
 
 //Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних), добийся математично правильної відповіді.
@@ -26,7 +29,11 @@ let f = +d + e;
 
 //Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
 
-let j;
-j = Number(prompt('Please specify the size of flash-drive in GB'));
-alert(`Your flash drive can contain ${ .mathFloor((j * 1000 / 820))}`);
+/*
 
+РАБОТАЕТ!
+
+const j = Number(prompt('Please specify the size of flash-drive in GB', ''));
+alert(`Your flash drive can contain ${Math.floor(j * 1000 / 820)} files (820Mb each)`);
+
+*/
